@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/vscode/devcontainers/universal
-#FROM ubuntu:22.04
 
 LABEL de.mindrunner.android-docker.flavour="ubuntu-standalone"
 
