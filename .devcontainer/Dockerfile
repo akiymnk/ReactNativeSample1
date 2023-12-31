@@ -1,4 +1,5 @@
-FROM ubuntu:22.04
+FROM mcr.microsoft.com/vscode/devcontainers/universal
+#FROM ubuntu:22.04
 
 LABEL de.mindrunner.android-docker.flavour="ubuntu-standalone"
 
@@ -38,7 +39,7 @@ RUN apt-get install -y \
 
 ENV LANG en_US.UTF-8
 
-RUN groupadd android && useradd -d /opt/android-sdk-linux -g android -u 1000 android
+RUN groupadd android && useradd -d /opt/android-sdk-linux -g android -u 1001 android
 
 COPY tools /opt/tools
 
